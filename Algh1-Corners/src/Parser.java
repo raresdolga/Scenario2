@@ -86,19 +86,5 @@ public class Parser {
             e.printStackTrace();
         }
     }
-    private Polygon parsePolygone(String s){
-        final List<Coordinate> coordinates = new ArrayList<>();
-        int index_left, index_right = -1, index_coma;
-        for(index_left = s.indexOf('('); index_left >= 0; index_left = s.indexOf(')',index_left + 1)){
-            index_right = s.indexOf(')',index_right + 1);
-            index_coma = s.indexOf(',',index_left);
-            coordinates.add(
-                    new Coordinate(
-                            Double.parseDouble(s.substring(index_left + 1, index_coma)),
-                            Double.parseDouble(s.substring(index_coma + 1, index_right))));
-        }
-        coordinates.add(new Coordinate(coordinates.get(0).x, coordinates.get(0).y));
-        return new GeometryFactory().createPolygon(coordinates.toArray(new Coordinate[coordinates.size()]));
-    }
-
+    
 }
