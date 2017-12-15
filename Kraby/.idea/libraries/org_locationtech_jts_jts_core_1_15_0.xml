@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org.locationtech.jts:jts-core:1.15.0" type="repository">
+    <properties maven-id="org.locationtech.jts:jts-core:1.15.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/locationtech/jts/jts-core/1.15.0/jts-core-1.15.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
